@@ -1,0 +1,228 @@
+/* css reset */
+
+* {
+ margin: 0;
+ padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+
+/* Navigation bar: logo and image*/
+#logo {
+margin: 19px 24px;;
+}
+
+#logo img{
+    height: 56px;
+    margin: 6px 9px;;
+}
+/* Navigation bar:list styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 23px 43px;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#navbar::before{
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 233px;
+    height: 363px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url(../img/food-g4bbbc5764_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section */
+/* .services-container{
+    top: 800px;
+} */
+#services{
+   margin: 34px;
+   display: flex;
+}
+#services .box{
+    padding: 34px;
+    border: 2px solid red;
+    margin: 3px 9px;
+    border-radius: 23px;
+    background-color: #f2f2f2
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client-section */
+#client-section{
+    position: relative;
+  height: 450px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(../img/san-francisco-ga31c72ce1_1920.jpg);
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+#client img{
+    height: 131px;
+}
+.client-item{
+    padding: 40px;
+}
+
+/* contact-section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background: url(../img/wall-gd5d9c4fdf_1920.jpg) no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 9px 20px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+#contact .btn{
+    background-color: black;
+    color: white;
+}
+#contact .btn:hover{
+    background-color: rgb(37, 35, 35);
+}
+footer{
+    background: black;
+    color: white;
+    padding: 3px 4px;
+
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px 12px;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 7px 19px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 18px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
